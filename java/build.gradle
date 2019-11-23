@@ -1,0 +1,20 @@
+apply plugin: 'java'
+
+group 'kata'
+version '1.0-SNAPSHOT'
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.approvaltests:approvaltests:3.2.0'
+}
+
+test {
+    testLogging {
+        exceptionFormat "full"
+    }
+}
